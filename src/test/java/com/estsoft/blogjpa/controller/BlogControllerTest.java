@@ -91,14 +91,14 @@ class BlogControllerTest {
 
     @Test
     public void deleteById() throws Exception {
-//        given: 삭제할 대상 데이터 save
+        // given: 삭제할 대상 데이터 save
         Article article = blogRepository.save(new Article("title", "content"));
         Long id = article.getId();
 
-//        when: DELETE /api/articles/{id}
+        // when: DELETE /api/articles/{id}
         ResultActions resultActions = mockMvc.perform(delete("/api/articles/{id}", id));
 
-//        then: 삭제 결과 확인 , 200 응답코드 확인
+        // then: 삭제 결과 확인 , 200 응답코드 확인
         resultActions.andExpect(status().isOk());
 
         Optional<Article> deletedArticle = blogRepository.findById(id);
