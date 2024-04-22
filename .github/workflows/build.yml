@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  S3_BUCKET_NAME: nu2nu-cicdbucket
+  S3_BUCKET_NAME: nu2nu-bucket
   AWS_REGION: ap-northeast-2
   CODEDEPLOY_NAME: github-actions
   CODEDEPLOY_GROUP: icode-github-actions-group
