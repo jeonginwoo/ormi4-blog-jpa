@@ -2,13 +2,13 @@ name: github-action-workflow
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ master ]
   pull_request:
-    branches: [ develop ]
+    branches: [ master ]
   workflow_dispatch:
 
 env:
-  S3_BUCKET_NAME: icode-cicdbucket
+  S3_BUCKET_NAME: nu2nu-cicdbucket
   AWS_REGION: ap-northeast-2
   CODEDEPLOY_NAME: github-actions
   CODEDEPLOY_GROUP: icode-github-actions-group
