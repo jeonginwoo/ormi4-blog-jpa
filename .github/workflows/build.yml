@@ -10,8 +10,8 @@ on:
 env:
   S3_BUCKET_NAME: nu2nu-bucket
   AWS_REGION: ap-northeast-2
-  CODEDEPLOY_NAME: github-actions
-  CODEDEPLOY_GROUP: icode-github-actions-group
+#  CODEDEPLOY_NAME: github-actions
+#  CODEDEPLOY_GROUP: icode-github-actions-group
 
 jobs:
   build:
